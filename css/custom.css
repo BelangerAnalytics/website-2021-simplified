@@ -15,4 +15,41 @@ body {
 
 .box-simple {
     min-height: 230px;
+    p {
+        color: #333333;
+    }
+}
+
+.client-list {
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    .item {
+        height: 4em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    
+.client-list {
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+
+}
+
+
 }
